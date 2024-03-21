@@ -18,3 +18,9 @@ exercises.c:46:15: error: ‘lista’ undeclared (first use in this function)
 exercises.c:46:15: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 a58240b
+Thu 21 Mar 2024 01:11:14 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+64bacda
