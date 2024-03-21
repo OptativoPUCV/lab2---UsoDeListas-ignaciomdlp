@@ -78,3 +78,21 @@ Thu 21 Mar 2024 01:40:50 AM UTC:
  tests:  2|3
 total_score: 30/70
 3bc2891
+Thu 21 Mar 2024 02:02:16 AM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:17: error: passing argument 2 of ‘pushBack’ makes pointer from integer without a cast [-Werror=int-conversion]
+   48 |     pushBack(L, 1);
+      |                 ^
+      |                 |
+      |                 int
+In file included from exercises.c:1,
+                 from test.c:5:
+arraylist.h:20:30: note: expected ‘void *’ but argument is of type ‘int’
+   20 | void pushBack(List *L, void *dato);
+      |                        ~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ddc15ad
