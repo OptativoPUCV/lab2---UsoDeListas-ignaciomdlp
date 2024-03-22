@@ -47,7 +47,7 @@ List *crea_lista() {
     int *ptr = (int *)malloc(sizeof(int));
     if (ptr == NULL) exit(EXIT_FAILURE);
 
-    *ptr = i
+    *ptr = i;
     
     pushBack(L, ptr);
   }
