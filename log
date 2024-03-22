@@ -125,3 +125,17 @@ Thu 21 Mar 2024 02:31:30 AM UTC:
  tests:  3|2
 total_score: 40/70
 eb77844
+Fri 22 Mar 2024 12:46:05 AM UTC: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:50:13: error: expected ‘;’ before ‘pushBack’
+   50 |     *ptr = i
+      |             ^
+      |             ;
+   51 | 
+   52 |     pushBack(L, ptr);
+      |     ~~~~~~~~ 
+Compilation failed
+74d7696
