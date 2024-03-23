@@ -120,7 +120,7 @@ int parentesisBalanceados(char *cadena){
   Stack *pila = create_stack();
   int cont = 0;
   
-  while(cadena[cont] != "\0"){
+  while(cadena[cont] != '\0'){
     
     if(cadena[cont] == "(" || cadena[cont] == "[" || cadena[cont] == "{"){
       push(pila, &cadena[cont]);
@@ -131,7 +131,7 @@ int parentesisBalanceados(char *cadena){
         
       else{
         char *ptr = top(pila);
-        if ((cadena[cont] == ')' && *ptr == '(') || (cadena[cont] == '}' && *ptr == '{') || (cadena[cont] == ']' && *ptr == '[')) pop(pila);
+        if ((cadena[cont] == ')' && *ptr == '(') || (cadena[cont] == '}' && *ptr == '{') || (cadena[cont] == ']' && *ptr == '['))pop(pila);
       }
     }
     cont++;
