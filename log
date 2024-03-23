@@ -745,3 +745,17 @@ Sat 23 Mar 2024 01:16:41 AM UTC:
  tests:  6|1
 total_score: 60/70
 716b3ba
+Sat 23 Mar 2024 01:20:18 AM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:140:7: error: expected expression before ‘)’ token
+  140 |   if ()
+      |       ^
+exercises.c:141:7: error: implicit declaration of function ‘is_empty’ [-Werror=implicit-function-declaration]
+  141 |   if (is_empty(pila)) return 1;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4693b30

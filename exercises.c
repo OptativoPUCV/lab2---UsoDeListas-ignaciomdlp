@@ -127,7 +127,7 @@ int parentesisBalanceados(char *cadena){
     }
       
     else if(cadena[cont] == ')' || cadena[cont] == ']' || cadena[cont] == '}'){
-      if (pila == NULL) return 1;
+      if (pila == NULL) return 0;
         
       else{
         char *ptr = top(pila);
@@ -137,6 +137,7 @@ int parentesisBalanceados(char *cadena){
     }
     cont++;
   }
-  if (top(pila) == NULL) return 1;
+  if ()
+  if (is_empty(pila)) return 1;
   return 0;
 }
