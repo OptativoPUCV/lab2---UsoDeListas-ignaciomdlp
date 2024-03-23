@@ -716,3 +716,9 @@ exercises.c:134:122: error: comparison with string literal results in unspecifie
 cc1: all warnings being treated as errors
 Compilation failed
 338ca93
+Sat 23 Mar 2024 01:12:13 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  6|1
+total_score: 60/70
+93545f6
