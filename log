@@ -267,3 +267,65 @@ exercises.c:134:101: error: comparison with string literal results in unspecifie
 cc1: all warnings being treated as errors
 Compilation failed
 64ca61e
+Sat 23 Mar 2024 12:48:30 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:123:22: error: comparison between pointer and integer [-Werror]
+  123 |   while(cadena[cont] != "\0"){
+      |                      ^~
+exercises.c:123:22: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:125:21: error: comparison between pointer and integer [-Werror]
+  125 |     if(cadena[cont] == "(" || cadena[cont] == "[" || cadena[cont] == "{"){
+      |                     ^~
+exercises.c:125:21: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:125:44: error: comparison between pointer and integer [-Werror]
+  125 |     if(cadena[cont] == "(" || cadena[cont] == "[" || cadena[cont] == "{"){
+      |                                            ^~
+exercises.c:125:44: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:125:67: error: comparison between pointer and integer [-Werror]
+  125 |     if(cadena[cont] == "(" || cadena[cont] == "[" || cadena[cont] == "{"){
+      |                                                                   ^~
+exercises.c:125:67: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:129:26: error: comparison between pointer and integer [-Werror]
+  129 |     else if(cadena[cont] == ")" || cadena[cont] == "]" || cadena[cont] == "}"){
+      |                          ^~
+exercises.c:129:26: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:129:49: error: comparison between pointer and integer [-Werror]
+  129 |     else if(cadena[cont] == ")" || cadena[cont] == "]" || cadena[cont] == "}"){
+      |                                                 ^~
+exercises.c:129:49: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:129:72: error: comparison between pointer and integer [-Werror]
+  129 |     else if(cadena[cont] == ")" || cadena[cont] == "]" || cadena[cont] == "}"){
+      |                                                                        ^~
+exercises.c:129:72: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:134:26: error: comparison between pointer and integer [-Werror]
+  134 |         if((cadena[cont] == ")" && *ptr == "(")||((cadena[cont] == "]")&&(*ptr == "[")) ||(cadena[cont] == "}") && (*(ptr == "{"))) pop(pila);
+      |                          ^~
+exercises.c:134:26: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:134:41: error: comparison between pointer and integer [-Werror]
+  134 |         if((cadena[cont] == ")" && *ptr == "(")||((cadena[cont] == "]")&&(*ptr == "[")) ||(cadena[cont] == "}") && (*(ptr == "{"))) pop(pila);
+      |                                         ^~
+exercises.c:134:41: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:134:65: error: comparison between pointer and integer [-Werror]
+  134 |         if((cadena[cont] == ")" && *ptr == "(")||((cadena[cont] == "]")&&(*ptr == "[")) ||(cadena[cont] == "}") && (*(ptr == "{"))) pop(pila);
+      |                                                                 ^~
+exercises.c:134:65: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:134:80: error: comparison between pointer and integer [-Werror]
+  134 |         if((cadena[cont] == ")" && *ptr == "(")||((cadena[cont] == "]")&&(*ptr == "[")) ||(cadena[cont] == "}") && (*(ptr == "{"))) pop(pila);
+      |                                                                                ^~
+exercises.c:134:80: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:134:105: error: comparison between pointer and integer [-Werror]
+  134 |         if((cadena[cont] == ")" && *ptr == "(")||((cadena[cont] == "]")&&(*ptr == "[")) ||(cadena[cont] == "}") && (*(ptr == "{"))) pop(pila);
+      |                                                                                                         ^~
+exercises.c:134:105: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:134:123: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  134 |         if((cadena[cont] == ")" && *ptr == "(")||((cadena[cont] == "]")&&(*ptr == "[")) ||(cadena[cont] == "}") && (*(ptr == "{"))) pop(pila);
+      |                                                                                                                           ^~
+exercises.c:134:117: error: invalid type argument of unary ‘*’ (have ‘int’)
+  134 |         if((cadena[cont] == ")" && *ptr == "(")||((cadena[cont] == "]")&&(*ptr == "[")) ||(cadena[cont] == "}") && (*(ptr == "{"))) pop(pila);
+      |                                                                                                                     ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7b969ef
